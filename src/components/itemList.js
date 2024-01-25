@@ -11,7 +11,7 @@ const MovieLis = ({setList})=>{
   ]);
   const [selectedCategory, setSelectedCategory] = useState('All');
 
-  const filterItems = (category, id) => {
+  const filterItems = (category) => {
     if (category === 'All') {
       setList(Item);
     } else if(category === 'Breakfast') {
@@ -36,9 +36,9 @@ const MovieLis = ({setList})=>{
     <div id="main" >
     {
     categories.map((category, index) => (
-      <h3 id={`filter-btn-${index+1}` }
-        key={index}
-        onClick={() => filterItems(category, id=`[data-test-id="menu-item-${category}"]`)}
+      <h3 id={`filter-btn-${index+1}`}
+        key={index} data-testid={`menu-item-${category}`}
+        onClick={() => filterItems(category)}
       >
         {category}
       </h3>

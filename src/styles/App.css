@@ -5,7 +5,7 @@
         color: rgb(213, 156, 111);;
     }
     .menu{
-        width: 70%;
+        width: 90%;
         margin: auto;
         margin-top: 15px;
         display: grid;
@@ -26,7 +26,12 @@
         border-bottom: 1px dotted black;
     }
     .menu-item{
+        width: 90%;
         padding: 10px;
+        display: flex;
+    }
+    .item-info{
+        margin-left: 12px;
     }
     /* h1{
         text-decoration-line: underline;
@@ -51,4 +56,8 @@
         width: 70%;
        font-family: Arial, Helvetica, sans-serif;
         font-weight: 100;
+      }
+      img{
+        height: 200px;
+        width: 200px;
       }

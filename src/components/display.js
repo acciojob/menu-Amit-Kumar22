@@ -1,13 +1,13 @@
 import React from 'react'
-import CSSS from '../styles/App.css'
+import  '../styles/App.css'
 
 function Display({list}) {
   return(
     <div className="menu">
-    {
+    { list &&
     list.map((item) => (
       <div key={item.id} className="menu-item">
-        <img src={item.imagess} alt={item.title} />
+        <img src={item.img} alt={item.title} />
         <div className="item-info">
           <div className='rate'>
           <h3>{item.title}</h3>

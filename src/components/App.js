@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import ItemList from './itemList';
 import Display from './display'
-import CSSS from '../styles/App.css'
+import '../styles/App.css'
 
 function App() {
     const [list, setList] = useState([])

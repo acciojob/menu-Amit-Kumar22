@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React,{useState} from "react";
 import Item from "./item";
-import CSSS from '../styles/App.css'
+import  '../styles/App.css'
 
 const MovieLis = ({setList})=>{
   // const [ItemItems, setItemItems] = useState(Item);

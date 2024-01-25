@@ -33,10 +33,10 @@ const MovieLis = ({setList})=>{
   };
 
   return(
-    <div className="abc">
+    <div id="main" >
     {
     categories.map((category, index) => (
-      <h3
+      <h3 id={`filter-btn-${index+1}`}
         key={index}
         onClick={() => filterItems(category)}
       >
